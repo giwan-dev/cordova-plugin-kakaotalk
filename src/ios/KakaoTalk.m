@@ -154,14 +154,6 @@
 
 @implementation AppDelegate (KakaoTalk)
 
-- (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
-    if (launchOptions == nil) {
-        return [super application:application didFinishLaunchingWithOptions:launchOptions];
-    } else {
-        return YES;
-    }
-}
-
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     NSLog(@"Deprecated Kakao openURL is called");
     if (!url) {
