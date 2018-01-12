@@ -24,6 +24,10 @@ var KakaoTalk = {
 			}
 		};
 	    exec(successCallback, errorCallback, "KakaoTalk", "share", [options]);
+	},
+
+	openPlusFriend: function(id, successCallback, errorCallback) {
+		exec(successCallback, errorCallback, "KakaoTalk", "openPlusFriend", [id]);
 	}
 };
 

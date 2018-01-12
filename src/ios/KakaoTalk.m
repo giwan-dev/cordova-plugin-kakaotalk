@@ -148,6 +148,14 @@
     }
 }
 
+- (void)openPlusFriend:(CDVInvokedUrlCommand *)command {
+    NSString *id = [command.arguments lastObject];
+    NSString *url = [@"kakaoplus://plusfriend/home/" stringByAppendingString:id];
+    NSURL *kakaoPlusFriendUrl = [NSURL URLWithString:url];
+
+    [[UIApplication sharedApplication] openURL:kakaoPlusFriendUrl];
+}
+
 @end
 
 #pragma mark - AppDelegate Overrides
